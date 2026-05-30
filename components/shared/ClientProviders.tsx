@@ -5,7 +5,7 @@ import { FluidCursor } from "@/components/ui/fluid-cursor";
 
 export function ClientProviders({ children }: { children: React.ReactNode }) {
     return (
-        <ReactLenis root options={{ lerp: 0.05, syncTouch: true }}>
+        <ReactLenis root options={{ lerp: 0.05, syncTouch: false }}>
             <FluidCursor />
             {children}
         </ReactLenis>
