@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f5f0e9;
+    --foreground: #0a4d2e;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #061c13;
+    --foreground: #f5f0e9;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Lenis Recommended Styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ======== Smooth Scroll ======== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======== Custom Scrollbar ======== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #061c13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00b4a0;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #009688;
+}
+
+/* ======== Selection ======== */
+::selection {
+  background: rgba(0, 180, 160, 0.3);
+  color: #f5f0e9;
+}
+
+/* ======== Utility Animations ======== */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #00b4a0 0%, #009688 50%, #0a4d2e 100%);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-32;
+  }
+}
