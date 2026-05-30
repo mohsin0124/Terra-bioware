@@ -61,7 +61,7 @@ export function Contact() {
     };
 
     return (
-        <section id="contact" className="relative bg-[#061c13] text-terra-sand overflow-hidden">
+        <section id="contact" className="relative bg-[#061c13] text-terra-sand overflow-x-clip">
             {/* Ambient glow */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-terra-teal/[0.03] blur-[120px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-terra-teal/[0.02] blur-[100px] pointer-events-none" />

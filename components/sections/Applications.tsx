@@ -67,7 +67,7 @@ export function Applications() {
     return (
         <section
             id="applications"
-            className="relative w-full bg-[#061c13] text-terra-sand overflow-hidden py-24 md:py-32 section-padding"
+            className="relative w-full bg-[#061c13] text-terra-sand overflow-x-clip py-24 md:py-32 section-padding"
         >
             {/* Dot grid pattern */}
             <div

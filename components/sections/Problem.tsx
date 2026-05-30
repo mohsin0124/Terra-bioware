@@ -53,7 +53,7 @@ const STATS = [
 
 export function Problem() {
     return (
-        <section id="problem" className="relative w-full bg-[#061c13] text-terra-sand overflow-hidden py-24 md:py-32">
+        <section id="problem" className="relative w-full bg-[#061c13] text-terra-sand overflow-x-clip py-24 md:py-32">
             {/* Subtle radial glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-red-500/[0.03] blur-[150px] pointer-events-none" />
 

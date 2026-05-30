@@ -52,7 +52,7 @@ export function Technology() {
     return (
         <section
             id="technology"
-            className="relative w-full bg-terra-sand text-terra-green overflow-hidden"
+            className="relative w-full bg-terra-sand text-terra-green overflow-x-clip"
         >
             {/* Top gradient blend from dark sections */}
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#061c13] to-transparent z-10 pointer-events-none" />
@@ -91,7 +91,7 @@ export function Technology() {
                             whileInView={{ y: 0, opacity: 1 }}
                             viewport={{ once: true, margin: "-15%" }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="process-card group bg-white/50 backdrop-blur-md p-8 lg:p-10 rounded-3xl border border-terra-green/5 hover:border-terra-teal/20 shadow-sm hover:shadow-xl transition-all duration-500 will-change-transform relative overflow-hidden"
+                            className="process-card group bg-white/50 backdrop-blur-md p-8 lg:p-10 rounded-3xl border border-terra-green/5 hover:border-terra-teal/20 shadow-sm hover:shadow-xl transition-all duration-500 will-change-transform relative overflow-x-clip"
                         >
                             {/* Watermark step number */}
                             <span className="absolute top-5 right-7 font-display text-[5rem] font-bold text-terra-green/[0.03] leading-none select-none">

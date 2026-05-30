@@ -71,7 +71,7 @@ export function Story() {
     return (
         <section
             id="story"
-            className="relative w-full bg-terra-sand text-terra-green overflow-hidden py-24 md:py-32 section-padding"
+            className="relative w-full bg-terra-sand text-terra-green overflow-x-clip py-24 md:py-32 section-padding"
         >
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
