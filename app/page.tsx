@@ -13,8 +13,8 @@ export default function Home() {
         "@type": "Organization",
         "name": "Terra Bioware",
         "legalName": "Anava Bioware Pvt. Ltd.",
-        "url": "https://www.terrabioware.co",
-        "logo": "https://www.terrabioware.co/logo.png",
+        "url": "https://terra-bioware.vercel.app",
+        "logo": "https://terra-bioware.vercel.app/logo.png",
         "foundingDate": "2022",
         "founders": [
             {

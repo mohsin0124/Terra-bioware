@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/api/',
         },
-        sitemap: 'https://www.terrabioware.co/sitemap.xml',
+        sitemap: 'https://terra-bioware.vercel.app/sitemap.xml',
     };
 }

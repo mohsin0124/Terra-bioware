@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://www.terrabioware.co"),
+    metadataBase: new URL("https://terra-bioware.vercel.app"),
     title: {
         default: "Terra Bioware — Climate-Positive Biomanufacturing",
         template: "%s | Terra Bioware",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         "Sustainability",
         "Alternative Plastics"
     ],
-    authors: [{ name: "Terra Bioware", url: "https://www.terrabioware.co" }],
+    authors: [{ name: "Terra Bioware", url: "https://terra-bioware.vercel.app" }],
     creator: "Terra Bioware",
     alternates: {
         canonical: "/",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         title: "Terra Bioware — Turning Emissions into Tomorrow's Materials",
         description:
             "Climate-positive biomanufacturing. 150+ PHA biopolyesters from captured methane. Marine-biodegradable, home-compostable, carbon-negative.",
-        url: "https://www.terrabioware.co",
+        url: "https://terra-bioware.vercel.app",
         siteName: "Terra Bioware",
         type: "website",
     },

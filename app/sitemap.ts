@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
-            url: 'https://www.terrabioware.co',
+            url: 'https://terra-bioware.vercel.app',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,
