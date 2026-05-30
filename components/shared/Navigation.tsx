@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { MagneticButton } from "../ui/magnetic-button";
 import { Menu, X } from "lucide-react";
@@ -81,9 +82,13 @@ export function Navigation() {
                     onClick={(e) => handleNavClick(e, "#hero")}
                     className="flex items-center gap-3 cursor-pointer group"
                 >
-                    <div className="w-9 h-9 rounded-full border border-terra-teal/40 flex items-center justify-center overflow-hidden group-hover:border-terra-teal transition-colors duration-300">
-                        <div className="w-3.5 h-3.5 bg-terra-teal rounded-full shadow-[0_0_12px_3px_rgba(0,180,160,0.5)] group-hover:shadow-[0_0_16px_5px_rgba(0,180,160,0.7)] transition-all duration-300" />
-                    </div>
+                    <Image
+                        src="/logo.png"
+                        alt="Terra Bioware Logo"
+                        width={36}
+                        height={36}
+                        className="rounded-full border border-terra-teal/40 group-hover:border-terra-teal transition-colors duration-300"
+                    />
                     <span className="font-display font-semibold text-terra-sand text-xl tracking-wide">
                         Terra Bioware
                     </span>
