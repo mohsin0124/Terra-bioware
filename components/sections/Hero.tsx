@@ -15,7 +15,7 @@ export function Hero() {
     return (
         <section
             id="hero"
-            className="relative w-full min-h-[100svh] flex flex-col justify-center overflow-x-clip bg-[#061c13]"
+            className="relative w-full min-h-[100dvh] flex flex-col justify-center overflow-x-clip bg-[#061c13]"
         >
             <PHAMoleculeScene />
 
