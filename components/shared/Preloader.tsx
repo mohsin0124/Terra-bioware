@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export function Preloader() {
     const [isLoading, setIsLoading] = useState(true);
@@ -31,12 +32,19 @@ export function Preloader() {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         className="flex flex-col items-center gap-6"
                     >
-                        {/* Hexagonal organic motif representing TerraPHA */}
-                        <div className="w-16 h-16 border border-terra-teal/50 rounded-full flex items-center justify-center animate-pulse">
-                            <div className="w-8 h-8 bg-terra-teal rounded-full animate-breathe blur-sm" />
+                        {/* Actual Terra Bioware Logo */}
+                        <div className="flex items-center justify-center animate-pulse">
+                            <Image
+                                src="/logo.png"
+                                alt="Terra Bioware Logo"
+                                width={80}
+                                height={80}
+                                className="invert mix-blend-screen opacity-90 drop-shadow-[0_0_15px_rgba(0,180,160,0.5)]"
+                                priority
+                            />
                         </div>
 
-                        <p className="font-sans text-terra-sand tracking-[0.3em] uppercase text-sm font-medium">
+                        <p className="font-sans text-terra-sand tracking-[0.3em] uppercase text-sm font-medium mt-4">
                             Terra Bioware
                         </p>
                     </motion.div>
