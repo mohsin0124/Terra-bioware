@@ -8,8 +8,37 @@ import { Story } from "@/components/sections/Story";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Terra Bioware",
+        "legalName": "Anava Bioware Pvt. Ltd.",
+        "url": "https://www.terrabioware.co",
+        "logo": "https://www.terrabioware.co/logo.png",
+        "foundingDate": "2022",
+        "founders": [
+            {
+                "@type": "Person",
+                "name": "Shruti Singh"
+            }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bengaluru",
+            "addressCountry": "IN"
+        },
+        "description": "Climate-positive biomanufacturing startup turning industrial methane into high-performance biodegradable biopolymers.",
+        "sameAs": [
+            "https://www.linkedin.com/company/terra-bioware"
+        ]
+    };
+
     return (
         <main className="relative w-full overflow-hidden">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Preloader />
             <Navigation />
 

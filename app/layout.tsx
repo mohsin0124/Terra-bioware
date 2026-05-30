@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
-    title: "Terra Bioware — Climate-Positive Biomanufacturing | Turning Emissions into Biomaterials",
+    metadataBase: new URL("https://www.terrabioware.co"),
+    title: {
+        default: "Terra Bioware — Climate-Positive Biomanufacturing",
+        template: "%s | Terra Bioware",
+    },
     description:
         "Terra Bioware (Anava Bioware Pvt. Ltd.) engineers proprietary methanotrophic microbes that capture industrial methane and CO₂, transforming them into TerraPHA — a family of 150+ high-performance, marine-biodegradable biopolymers. Founded 2022, Bengaluru.",
     keywords: [
@@ -22,8 +26,24 @@ export const metadata: Metadata = {
         "carbon negative",
         "Bengaluru startup",
         "Shruti Singh",
+        "Anava Bioware",
+        "Sustainability",
+        "Alternative Plastics"
     ],
-    authors: [{ name: "Terra Bioware" }],
+    authors: [{ name: "Terra Bioware", url: "https://www.terrabioware.co" }],
+    creator: "Terra Bioware",
+    alternates: {
+        canonical: "/",
+    },
+    icons: {
+        icon: [
+            { url: "/favicon.ico" },
+            { url: "/icon.png", type: "image/png" }
+        ],
+        apple: [
+            { url: "/icon.png" }
+        ]
+    },
     openGraph: {
         title: "Terra Bioware — Turning Emissions into Tomorrow's Materials",
         description:
