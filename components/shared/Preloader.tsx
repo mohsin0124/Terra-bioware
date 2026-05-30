@@ -39,7 +39,7 @@ export function Preloader() {
                                 alt="Terra Bioware Logo"
                                 width={80}
                                 height={80}
-                                className="invert mix-blend-screen opacity-90 drop-shadow-[0_0_15px_rgba(0,180,160,0.5)]"
+                                className="rounded-full shadow-[0_0_20px_rgba(0,180,160,0.3)]"
                                 priority
                             />
                         </div>

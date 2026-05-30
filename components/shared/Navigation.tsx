@@ -85,11 +85,11 @@ export function Navigation() {
                     <Image
                         src="/logo.png"
                         alt="Terra Bioware Logo"
-                        width={40}
-                        height={40}
-                        className="invert mix-blend-screen opacity-90 group-hover:opacity-100 group-hover:drop-shadow-[0_0_10px_rgba(0,180,160,0.8)] transition-all duration-300"
+                        width={36}
+                        height={36}
+                        className="rounded-full border border-terra-teal/40 group-hover:border-terra-teal transition-colors duration-300"
                     />
-                    <span className="font-display font-semibold text-terra-sand text-xl tracking-wide group-hover:text-white transition-colors duration-300">
+                    <span className="font-display font-semibold text-terra-sand text-xl tracking-wide">
                         Terra Bioware
                     </span>
                 </a>
